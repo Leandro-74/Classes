@@ -3,11 +3,22 @@ import java.util.Scanner;
 
 public class Lista1_3 {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-
+        Scanner s = new Scanner(System.in); LimparTela();
         
+        while (true) {
+            int valor = 0;
+            int quantidade = 0;
 
-    
+            System.out.print("Digite um valor a ser calculado: ");
+            int nValor = s.nextInt(); valor += nValor; quantidade += 1;
+
+            System.out.print("\n\n[1] Adicionar outro valor\n[2] Encerrar somatória\n\nQue opção deseja executar?: ");
+            int opt = s.nextInt();
+
+            if (opt == 1) { continue; }
+            else if (opt == 2) { break; }
+ 
+        }
     } public static void LimparTela() {
         System.out.print("\033[H\033[2J");
     }

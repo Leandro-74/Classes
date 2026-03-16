@@ -1,7 +1,7 @@
 package br.com.leandro.idt;
 import java.util.Scanner;
 
-public class Lista1 {
+public class Lista1_1 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 

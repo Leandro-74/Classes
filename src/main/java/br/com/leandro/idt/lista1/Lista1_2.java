@@ -1,4 +1,4 @@
-package br.com.leandro.idt;
+package br.com.leandro.idt.lista1;
 import java.util.Scanner;
 
 public class Lista1_2 {

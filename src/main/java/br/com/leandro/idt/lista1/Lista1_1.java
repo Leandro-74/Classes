@@ -14,7 +14,11 @@ public class Lista1_1 {
         if ((val % 5) == 0) res.append("[5] ");
         if ((val % 2) == 0) res.append("[2] ");
 
-        if (res.length() == 0) {System.out.print("O valor não é divisível por 2, 5 ou 10!");}
-        else {System.out.print("O valor escolhido é divisível por: "+res);}
+        if (res.length() == 0) {
+            System.out.print("O valor não é divisível por 2, 5 ou 10!");
+        }
+        else {
+            System.out.print("O valor escolhido é divisível por: "+res);
+        }
     }
 }

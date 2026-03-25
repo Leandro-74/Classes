@@ -21,7 +21,7 @@ public class Q2 {
                 System.out.println(num[i]);        
             }
         }
-
+        s.close();
     } public static void LimparTela() {
         System.out.print("\033[H\033[2J");
     }

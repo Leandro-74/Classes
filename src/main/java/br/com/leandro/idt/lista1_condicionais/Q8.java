@@ -1,7 +1,7 @@
-package br.com.leandro.idt.lista1;
+package br.com.leandro.idt.lista1_condicionais;
 import java.util.Scanner;
 
-public class Lista1_8 {
+public class Q8 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in); 
         LimparTela();

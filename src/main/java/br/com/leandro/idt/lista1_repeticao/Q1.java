@@ -13,7 +13,7 @@ public class Q1 {
             int res = val*i;
             System.out.printf("\n%d x %d = %d", val, i, res );
         }
-
+        s.close();
     } public static void LimparTela() {
         System.out.print("\033[H\033[2J");
     }

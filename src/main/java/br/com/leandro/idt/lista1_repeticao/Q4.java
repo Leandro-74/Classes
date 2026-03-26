@@ -31,6 +31,7 @@ public class Q4 {
         med = med_soma / med_div;
         System.out.printf("\nA média dos valores digitados é: %.2f", med);
 
+        s.close();
     } public static void LimparTela() {
         System.out.print("\033[H\033[2J");
     }

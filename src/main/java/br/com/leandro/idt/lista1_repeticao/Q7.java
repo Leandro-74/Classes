@@ -6,7 +6,7 @@ public class Q7 {
         Scanner s = new Scanner(System.in);
         LimparTela();
 
-        int[] val = new int[5];
+        int[] val = new int[20];
         float pos = 0;
         float neg = 0;
         int posCount = 0;

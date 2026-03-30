@@ -14,7 +14,7 @@ public class Q6 {
             fatorado *= i;
         }
         LimparTela();
-        System.out.printf("Valor faturado ficou: %d\n\n", fatorado);
+        System.out.printf("Valor fatorado ficou: %d\n\n", fatorado);
 
         s.close();
     } public static void LimparTela() {

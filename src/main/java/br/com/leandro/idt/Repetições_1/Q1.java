@@ -1,4 +1,4 @@
-package br.com.leandro.idt.lista1_repeticao;
+package br.com.leandro.idt.Repetições_1;
 import java.util.Scanner;
 
 public class Q1 {

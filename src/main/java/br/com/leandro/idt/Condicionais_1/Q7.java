@@ -1,4 +1,4 @@
-package br.com.leandro.idt.lista1_condicionais;
+package br.com.leandro.idt.Condicionais_1;
 import java.util.Scanner;
 
 public class Q7 {

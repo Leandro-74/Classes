@@ -15,7 +15,7 @@ public class Q3 {
             LimparTela();
             System.out.print("Digite um produto a ser adicionado: ");
             String produto = s.next();
-            System.out.print("Qual o custo de produção do mesmo(somente número)?: ");
+            System.out.print("Qual o custo de produção/compra do mesmo?: ");
             double custo = s.nextDouble();
             System.out.print("Qual o valor de venda do produto?: ");
             double venda = s.nextDouble();
@@ -27,7 +27,7 @@ public class Q3 {
                     lucro1.append("Lucro abaixo de 10%:\n");
                     primeira1 = false;
                 }
-                lucro1.append(String.format("\n%s : %.1f%%", produto, lucro));
+                lucro1.append(String.format("\n%s (R$ %.2f | R$ %.2f) : %.1f%%", produto, custo, venda, lucro));
             }
             if (lucro >= 10 && lucro <= 20) {
                 if (primeira2) {
@@ -35,7 +35,7 @@ public class Q3 {
                     lucro2.append("Lucro entre 10% e 20%:\n");
                     primeira2 = false;
                 }
-                lucro2.append(String.format("\n%s : %.1f%%", produto, lucro));
+                lucro2.append(String.format("\n%s (R$ %.2f | R$ %.2f) : %.1f%%", produto, custo, venda, lucro));
             }
             if (lucro > 20) {
                 if (primeira3) {
@@ -43,7 +43,7 @@ public class Q3 {
                     lucro3.append("Lucro acima de 20%:\n");
                     primeira3 = false;
                 }
-                lucro3.append(String.format("\n%s : %.1f%%", produto, lucro));
+                lucro3.append(String.format("\n%s (R$ %.2f | R$ %.2f) : %.1f%%", produto, custo, venda, lucro));
             }
             System.out.print("\n\nDesejas adicionar outro produto (S/N)?: ");
             String opt = s.next();
@@ -53,9 +53,11 @@ public class Q3 {
         }
         LimparTela();
         System.out.print("Segue o resultado de lucro dos produtos informados: ");
+        System.out.print("\nProduto (Compra | Venda) : Lucro");
         System.out.print(lucro1);
         System.out.print(lucro2);
         System.out.print(lucro3);
+        System.out.print("\n\n");
         s.close();
     } public static void LimparTela() {
         System.out.print("\033[H\033[2J");

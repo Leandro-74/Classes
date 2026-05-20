@@ -8,4 +8,5 @@ Um repositório dedicado a documentar meu progresso na engenharia de software.
 * [Questões da primeira lista de while](./src/main/java/br/com/leandro/idt/While_1)
 * [Questões da segunda lista de while](./src/main/java/br/com/leandro/idt/While_2)
 * [Questões da primeira lista de subprogramas](./src/main/java/br/com/leandro/idt/Subprogramas_1/)
+* [Questões da segunda lista de subprogramas](./src/main/java/br/com/leandro/idt/Subprogramas_2/)
 * [Exercícios Avulsos](./src/main/java/br/com/leandro/idt/Exercícios_avulsos)

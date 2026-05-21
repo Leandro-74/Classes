@@ -6,11 +6,7 @@ public class Q1 {
     public static void main(String[] args) {
         while (true) {
             limparTela();
-            double l = 0;
-            double a = 0;
-            double c = 0;
-            double r = 0;
-            double volume = 0;
+            double volume;
             String tipo = "";
 
             System.out.print("Para as seguintes formas geométricas:\n\n");
@@ -21,38 +17,38 @@ public class Q1 {
             if (forma == 1) {
                 tipo = "cubo";
                 System.out.print("\n\nQual o lado do cubo?: ");
-                l = s.nextDouble();
+                double l = s.nextDouble();
                 volume = calculaCubo(l);
             
             } else if (forma == 2) {
                 tipo = "paralelepípedo";
                 System.out.print("\n\nQual o comprimento do paralelepípedo?: ");
-                c = s.nextDouble();
+                double c = s.nextDouble();
                 System.out.print("\nQual a largura do paralelepípedo?: ");
-                l = s.nextDouble();
+                double l = s.nextDouble();
                 System.out.print("\nQual a altura do paralelepípedo?: ");
-                a = s.nextDouble();
+                double a = s.nextDouble();
                 volume = calculaParalelepipedo(c, l, a);
             
             } else if (forma == 3) {
                 tipo = "cilindro";
                 System.out.print("\n\nQual o raio do cilindro?: ");
-                r = s.nextDouble();
+                double r = s.nextDouble();
                 System.out.print("\nQual a altura do cilindro?: ");
-                a = s.nextDouble();
+                double a = s.nextDouble();
                 volume = calculaCilindro(r, a);
             
             } else if (forma == 4) {
                 System.out.print("\n\nQual o raio da esfera?: ");
-                r = s.nextDouble();
+                double r = s.nextDouble();
                 volume = calculaEsfera(r);
             
             } else if (forma == 5) {
                 tipo = "cone";
                 System.out.print("\n\nQual o raio da base do cone?: ");
-                r = s.nextDouble();
+                double r = s.nextDouble();
                 System.out.print("\nQual a altura do cone?: ");
-                a = s.nextDouble();
+                double a = s.nextDouble();
                 volume = calculaCone(r, a);
             
             } else {
@@ -85,15 +81,15 @@ public class Q1 {
         return(volume);
     
     } private static double calculaCilindro(double r, double a) {
-        double volume = Math.PI*Math.pow(r, 2)*a;
+        double volume = Math.PI*(r*r)*a;
         return(volume);
     
     } private static double calculaEsfera(double r) {
-        double volume = (4.0/3.0)*Math.PI*Math.pow(r, 3);
+        double volume = (4.0/3.0)*Math.PI*(r*r*r);
         return(volume);
     
     } private static double calculaCone(double r, double a) {
-        double volume = (1.0/3.0)*Math.PI*Math.pow(r, 2)*a;
+        double volume = (1.0/3.0)*Math.PI*(r*r)*a;
         return(volume);
     
     } public static void limparTela() {

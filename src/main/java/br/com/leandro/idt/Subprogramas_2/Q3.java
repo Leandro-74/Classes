@@ -9,11 +9,13 @@ public class Q3 {
 
             System.out.print("Qual a massa, em gramas, do material a ser calculado seu decaimento até menos que 0,5 gramas?: ");
             float massaInicial = s.nextFloat();
+            s.nextLine();
             limparTela();
 
             if (massaInicial < 0.5) {
-                System.out.print("A massa do material já é menor que 0,5 gramas ou apresenta um valor inválido! Tente novamente.\n\n");
-                System.exit(0);
+                System.out.print("A massa do material já é menor que 0,5 gramas ou apresenta um valor inválido! Pressione ENTER para tentar novamente.\n\n");
+                s.nextLine();
+                continue;
             }
             String resultado = decaimento(massaInicial);
             System.out.print(resultado);

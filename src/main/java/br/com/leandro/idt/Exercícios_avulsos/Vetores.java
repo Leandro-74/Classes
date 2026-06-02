@@ -15,20 +15,22 @@ public class Vetores {
             System.exit(0);
         }
         int[] valores = new int[tamanho];
+        preencherArray(valores);
 
-        for (int i = 0; i < valores.length; i++) {
-            limparTela();
-            System.out.printf("Insira o %dº valor: ", i+1);
-            valores[i] = s.nextInt();
-        }
-
-        int maior = maior(valores);
+        int maior = maiorValor(valores);
         limparTela();
 
         System.out.printf("O maior valor dado é: %d\n\n", maior);
         s.close();
     }
-    public static int maior(int[] valores) {
+    public static void preencherArray(int[] valores) {
+        for (int i = 0; i < valores.length; i++) {
+            limparTela();
+            System.out.printf("Insira o %dº valor: ", i+1);
+            valores[i] = s.nextInt();
+        }
+    }
+    public static int maiorValor(int[] valores) {
         int maior = 0;
         for (int i = 0; i < valores.length; i++) {
             if (i == 0) {

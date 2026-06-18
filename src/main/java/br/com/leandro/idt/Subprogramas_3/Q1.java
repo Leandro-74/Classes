@@ -8,6 +8,7 @@ public class Q1 {
     static int cilindro = 0;
     static int esfera = 0;
     static int cone = 0;
+    static int invalidos = 0;
     public static void main(String[] args) {
         double media = 0;
         int contador = 0;
@@ -27,8 +28,8 @@ public class Q1 {
                 System.out.print("\n\nQual o lado do cubo?: ");
                 double l = s.nextDouble();
                 volume = calculaCubo(l);
-            
-            } else if (forma == 2) {
+            }
+            else if (forma == 2) {
                 tipo = "paralelepípedo";
                 System.out.print("\n\nQual o comprimento do paralelepípedo?: ");
                 double c = s.nextDouble();
@@ -47,6 +48,7 @@ public class Q1 {
                 volume = calculaCilindro(r, a);
             
             } else if (forma == 4) {
+                tipo = "esfera";
                 System.out.print("\n\nQual o raio da esfera?: ");
                 double r = s.nextDouble();
                 volume = calculaEsfera(r);
@@ -67,13 +69,23 @@ public class Q1 {
             limparTela();
 
             if (forma == 4) {
-                System.out.printf("O volume da esfera informada é: %.1f\n\n", volume);
+                if (volume > 0) {
+                    System.out.printf("O volume da %s informada é: %.1f\n\n", tipo, volume);
+                } else {
+                    System.out.printf("O volume da %s informada é: %.1f (Inválido)\n\n", tipo, volume);
+                }
             } else {
-                System.out.printf("O volume do %s informado é: %.1f\n\n", tipo, volume);
+                if (volume > 0) {
+                    System.out.printf("O volume do %s informado é: %.1f\n\n", tipo, volume);
+                } else {
+                    System.out.printf("O volume do %s informado é: %.1f (Inválido)\n\n", tipo, volume);
+                }
             }
 
-            media += volume;
-            contador++;
+            if (volume > 0) {
+                media += volume;
+                contador++;
+            }
             
             System.out.print("Deseja calcular o volume de outro objeto(S/N)?: ");
             String continuar = s.next();
@@ -82,7 +94,13 @@ public class Q1 {
                 break;
             } 
         }
-        media /= (double) contador;
+        if (contador > 0) {
+            media /= (double) contador;
+        }
+        else {
+            media = 0;
+        }
+        
         limparTela();
         System.out.printf("A média do volume dos objetos informados é: %.2f\n\n", media);
         System.out.print("Dos objetos apresentados, são eles:\n\n");
@@ -91,32 +109,72 @@ public class Q1 {
         System.out.printf("%d Cilindro(s)\n", cilindro);
         System.out.printf("%d Esfera(s)\n", esfera);
         System.out.printf("%d Cone(s)\n", cone);
+        
+        if (invalidos == 0) {
+            System.out.print("\nE dos objetos informados, nenhum é inválido!");
+        }
+        else if (invalidos == 1) {
+            System.out.print("\nE dos objetos informados, 1 é inválido!");
+        }
+        else {
+            System.out.printf("\nE dos objetos informados, %d são inválidos", invalidos);
+        }
         s.close();
     }
     private static double calculaCubo(double l) {
-        double volume = l*l*l;
-        cubo++;
-        return(volume);        
+        if (l <= 0) {
+            invalidos++;
+            return(0);
+        }
+        else {
+            double volume = l*l*l;
+            cubo++;
+            return(volume); 
+        }
     }
     private static double calculaParalelepipedo(double c, double l, double a) {
-        double volume = c*l*a;
-        paralel++;
-        return(volume);
+        if (c <= 0 || l <= 0 || a <= 0) {
+            invalidos++;
+            return(0);
+        }
+        else {
+            double volume = c*l*a;
+            paralel++;
+            return(volume);
+        }
     }
     private static double calculaCilindro(double r, double a) {
-        double volume = Math.PI*(r*r)*a;
-        cilindro++;
-        return(volume);
+        if (r <= 0 || a <= 0) {
+            invalidos++;
+            return(0);
+        }
+        else {
+            double volume = Math.PI*(r*r)*a;
+            cilindro++;
+            return(volume);
+        }
     }
     private static double calculaEsfera(double r) {
-        double volume = (4.0/3.0)*Math.PI*(r*r*r);
-        esfera++;
-        return(volume);
+        if (r <= 0) {
+            invalidos++;
+            return(0);
+        }
+        else {
+            double volume = (4.0/3.0)*Math.PI*(r*r*r);
+            esfera++;
+            return(volume);
+        }
     }
     private static double calculaCone(double r, double a) {
-        double volume = (1.0/3.0)*Math.PI*(r*r)*a;
-        cone++;
-        return(volume);
+        if (r <= 0 || a <= 0) {
+            invalidos++;
+            return(0);
+        }
+        else {
+            double volume = (1.0/3.0)*Math.PI*(r*r)*a;
+            cone++;
+            return(volume);
+        }
     }
     public static void limparTela() {
         System.out.print("\033[H\033[2J");

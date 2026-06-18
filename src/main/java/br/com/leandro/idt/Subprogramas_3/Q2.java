@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Q2 {
     static Scanner s = new Scanner(System.in);
     public static void main(String[] args) {
+        String listaPerfeitos = "";
+        String listaImperfeitos = "";
         while (true) {
             limparTela();
 
@@ -18,9 +20,11 @@ public class Q2 {
             String resultado = checarPerfeito(val);
             if (resultado.length() == 0) {
                 System.out.print("O valor dado não é perfeito, pois a soma de seus divisores, exceto ele mesmo, não é igual a ele!\n\n");
+                listaImperfeitos = lista(val, listaImperfeitos);
             }
             else {
                 System.out.printf("O valor informado é perfeito, pois a soma de seus divisores (exceto ele) resulta nele mesmo! Os seus divisores são:\n\n%s\n", resultado);
+                listaPerfeitos = lista(val, listaPerfeitos);
             }
 
             System.out.print("Deseja checar outro valor(S/N)?: ");
@@ -29,8 +33,15 @@ public class Q2 {
                 break;
             }
         }
+        limparTela();
+        if (listaPerfeitos.length() > 0) {
+            System.out.printf("Os números perfeitos dados foram:\n%s\n\n", listaPerfeitos);
+        }
+        else {
+            System.out.print("Não houve nenhum número perfeito listado!\n\n");
+        }
     }
-    private static String checarPerfeito(int val) {
+    public static String checarPerfeito(int val) {
         int somaDivisores = 0;
         String divisores = "";
         for (int i = 1; i < val; i++) {
@@ -43,6 +54,10 @@ public class Q2 {
             divisores = "";
         }
         return(divisores);
+    }
+    public static String lista(int valor, String lista) {
+        lista += String.format("\n%d", valor);
+        return(lista);
     }
     public static void limparTela() {
         System.out.print("\033[H\033[2J");

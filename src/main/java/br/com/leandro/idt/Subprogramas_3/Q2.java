@@ -21,10 +21,12 @@ public class Q2 {
             if (resultado.length() == 0) {
                 System.out.print("O valor dado não é perfeito, pois a soma de seus divisores, exceto ele mesmo, não é igual a ele!\n\n");
                 listaImperfeitos = lista(val, listaImperfeitos);
+                int menorImperfeito = calcMenor(val);
             }
             else {
                 System.out.printf("O valor informado é perfeito, pois a soma de seus divisores (exceto ele) resulta nele mesmo! Os seus divisores são:\n\n%s\n", resultado);
                 listaPerfeitos = lista(val, listaPerfeitos);
+                int maiorPerfeito = calcMenor(val);
             }
 
             System.out.print("Deseja checar outro valor(S/N)?: ");
@@ -58,6 +60,12 @@ public class Q2 {
     public static String lista(int valor, String lista) {
         lista += String.format("\n%d", valor);
         return(lista);
+    }
+    public static int calcMaior(int valor) {
+        if (valor = 0)
+    }
+    public static int calcMenor(int valor) {
+
     }
     public static void limparTela() {
         System.out.print("\033[H\033[2J");

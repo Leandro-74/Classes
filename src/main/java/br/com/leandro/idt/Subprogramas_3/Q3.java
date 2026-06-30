@@ -20,6 +20,8 @@ public class Q3 {
         int calculados = 0;
         String maiorTempo = "";
         String menorTempo = "";
+        String maiorNome = "";
+        String menorNome = "";
         while (true) {
             System.out.print("Qual o nome do material?: ");
             String nome = s.nextLine();
@@ -33,7 +35,7 @@ public class Q3 {
                 continue;
             }
             calculados++;
-            String resultado = decaimento(massaInicial);
+            String resultado = decaimento(massaInicial, maiorTempo, menorTempo);
             System.out.print(resultado);
 
             System.out.print("Deseja calcular o decaimento de outro material(S/N)?: ");
@@ -50,13 +52,14 @@ public class Q3 {
         System.out.printf("A média de tempo levado para os materais informados decaírem é %s.", converterTempo(media));
         s.close();
     }
-    public static String decaimento(float massaInicial) {
+    public static String decaimento(float massaInicial, String maior, String menor) {
         float massaFinal = massaInicial;
         int segundos = 0;
         while (massaFinal >= 0.5) {
             massaFinal /= 2;
             segundos += 50;
         }
+
         media += segundos;
         String resultado = String.format("Para um material de %.1f gramas, levará %s para que ele fique com uma massa de %.2f gramas, sendo menor que 0,5 gramas\n\n", massaInicial, converterTempo(segundos), massaFinal);
         return(resultado);
@@ -67,9 +70,6 @@ public class Q3 {
         segundos = (segundos%3600)%60;
         String resultado = String.format("%02d:%02d:%02d", horas, minutos, segundos);
         return(resultado);
-    }
-    public static void calcularMedia(int segundos) {
-
     }
     public static void limparTela() {
         System.out.print("\033[H\033[2J");

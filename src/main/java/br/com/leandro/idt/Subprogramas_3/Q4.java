@@ -69,6 +69,9 @@ public class Q4 {
         else {
             System.out.printf("para um total de %d brinquedos, nenhuma esfera é necessária, tendo em vista que todos os brinquedos são maiores que a maior esfera!", total);
         }
+        if (avisoFalha.length() > 0) {
+            System.out.printf("\n\nHouveram registros inválidos em medidas de brinquedos, sendo eles:\n%s", avisoFalha);
+        }
     }
     public static void calcEsfera (double alt, double larg, double compr) {
         double diagonal = Math.sqrt((alt*alt)+(larg*larg)+(compr*compr));

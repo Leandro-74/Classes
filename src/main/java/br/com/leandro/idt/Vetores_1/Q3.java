@@ -9,7 +9,7 @@ public class Q3 {
         int[] vetor = new int[16];
 
         while (true) {
-            System.out.print("[1] Preencher de forma aleatório\n[2] Preencher de forma sequencial");
+            System.out.print("[1] Preencher automaticamente\n[2] Preencher sequencialmente\n[3] Preencher manualmente");
             System.out.print("\n\nDe que forma deseja preencher o vetor?: ");
             int opt = s.nextInt();
 
@@ -18,6 +18,9 @@ public class Q3 {
             }
             else if (opt == 2) {
                 preencherSequencial(vetor);
+            }
+            else if (opt == 3) {
+                preencherManual(vetor, s);
             }
             else {
                 limparTela();
@@ -51,6 +54,14 @@ public class Q3 {
     public static int[] preencherSequencial(int[] vetor) {
         for (int i = 1; i <= vetor.length; i++) {
             vetor[i-1] = i;
+        }
+        return(vetor);
+    }
+    public static int[] preencherManual(int [] vetor, Scanner s) {
+        limparTela();
+        for (int i = 1; i <= vetor.length; i++) {
+            System.out.printf("Qual o valor para a %dª posição do vetor?: ", i);
+            vetor[i-1] = s.nextInt();
         }
         return(vetor);
     }

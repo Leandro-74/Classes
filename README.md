@@ -1,13 +1,13 @@
 # Classes
 Um repositório dedicado a documentar meu progresso na engenharia de software.
 
-* [Questões da primeira lista de condicionais](./src/main/java/br/com/leandro/idt/Condicionais_1)
-* [Questões da segunda lista de condicionais](./src/main/java/br/com/leandro/idt/Condicionais_2)
-* [Questões da primeira lista de repetições (for)](./src/main/java/br/com/leandro/idt/Repetições_1)
-* [Questões da segunda lista de repetições (for)](./src/main/java/br/com/leandro/idt/Repetições_2)
-* [Questões da primeira lista de while](./src/main/java/br/com/leandro/idt/While_1)
-* [Questões da segunda lista de while](./src/main/java/br/com/leandro/idt/While_2)
-* [Questões da primeira lista de subprogramas](./src/main/java/br/com/leandro/idt/Subprogramas_1/)
-* [Questões da segunda lista de subprogramas](./src/main/java/br/com/leandro/idt/Subprogramas_2/)
-* [Questões da primeira lista de vetores](./src/main/java/br/com/leandro/idt/Vetores_1/)
-* [Exercícios Avulsos](./src/main/java/br/com/leandro/idt/Exercícios_avulsos)
+* [Questões da primeira lista de condicionais](./src/main/java/br/com/leandro/Fase_1/idt/Condicionais_1)
+* [Questões da segunda lista de condicionais](./src/main/java/br/com/leandro/Fase_1/idt/Condicionais_2)
+* [Questões da primeira lista de repetições (for)](./src/main/java/br/com/leandro/Fase_1/idt/Repetições_1)
+* [Questões da segunda lista de repetições (for)](./src/main/java/br/com/leandro/Fase_1/idt/Repetições_2)
+* [Questões da primeira lista de while](./src/main/java/br/com/leandro/Fase_1/idt/While_1)
+* [Questões da segunda lista de while](./src/main/java/br/com/leandro/Fase_1/idt/While_2)
+* [Questões da primeira lista de subprogramas](./src/main/java/br/com/leandro/Fase_1/idt/Subprogramas_1/)
+* [Questões da segunda lista de subprogramas](./src/main/java/br/com/leandro/Fase_1/idt/Subprogramas_2/)
+* [Questões da primeira lista de vetores](./src/main/java/br/com/leandro/Fase_1/idt/Vetores_1/)
+* [Exercícios Avulsos](./src/main/java/br/com/leandro/Fase_1/idt/Exercícios_avulsos)

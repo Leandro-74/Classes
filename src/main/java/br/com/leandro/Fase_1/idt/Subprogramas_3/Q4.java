@@ -1,4 +1,4 @@
-package br.com.leandro.idt.Subprogramas_3;
+package br.com.leandro.Fase_1.idt.Subprogramas_3;
 import java.util.Scanner;
 
 public class Q4 {

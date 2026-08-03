@@ -1,4 +1,4 @@
-package br.com.leandro.idt.Condicionais_1;
+package br.com.leandro.Fase_1.idt.Condicionais_1;
 import java.util.Scanner;
 
 public class Q8 {

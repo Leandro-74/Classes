@@ -1,4 +1,4 @@
-package br.com.leandro.idt.Exercícios_avulsos;
+package br.com.leandro.Fase_1.idt.Exercícios_avulsos;
 import java.util.Scanner;
 
 public class Vetores {

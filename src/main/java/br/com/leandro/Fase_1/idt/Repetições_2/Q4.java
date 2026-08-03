@@ -1,4 +1,4 @@
-package br.com.leandro.idt.Repetições_2;
+package br.com.leandro.Fase_1.idt.Repetições_2;
 import  java.util.Scanner;
 
 public class Q4 {

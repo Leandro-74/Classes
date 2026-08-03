@@ -1,4 +1,4 @@
-package br.com.leandro.idt.While_2;
+package br.com.leandro.Fase_1.idt.While_2;
 import java.util.Scanner;
 
 public class Q6 {

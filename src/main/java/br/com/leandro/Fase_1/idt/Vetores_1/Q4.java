@@ -1,4 +1,4 @@
-package br.com.leandro.idt.Vetores_1;
+package br.com.leandro.Fase_1.idt.Vetores_1;
 import java.util.Scanner;
 import java.util.Random;
 

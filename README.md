@@ -1,7 +1,7 @@
 # Classes
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![UDESC](https://img.shields.io/badge/UDESC-Engenharia%20de%20Software-blue)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![UDESC](https://img.shields.io/badge/UDESC-Engenharia%20de%20Software-blue)](https://www.udesc.br/ceavi/engenhariadesoftware)
 ![Status](https://img.shields.io/badge/status-em%20andamento-yellow)
 
 Repositório dedicado a documentar meu progresso no curso de **Engenharia de Software** na **UDESC**, com as questões e exercícios resolvidos ao longo das disciplinas.

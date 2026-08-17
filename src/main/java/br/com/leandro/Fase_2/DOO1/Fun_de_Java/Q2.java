@@ -17,12 +17,12 @@ public class Q2 {
         if (delta < 0) {
             System.out.print("Sem raiz real");
         } else if (delta == 0) {
-            double X = -b / 2*a;
-            System.out.printf("%.2f", X);
+            double X = -b / (2*a);
+            System.out.printf(ptBr, "%.2f", X);
         } else {
             double X1 = (-b + Math.sqrt(delta)) / (2*a);
             double X2 = (-b - Math.sqrt(delta)) / (2*a);
-            System.out.printf("%.2f;%.2f", X1, X2);
+            System.out.printf(ptBr, "%.2f;%.2f", X1, X2);
         }
         s.close();
     }

@@ -12,7 +12,7 @@ public class Q1 {
         Double altura = s.nextDouble();
 
         Double resultado = Math.PI * Math.pow(raio, 2) * altura;
-        System.out.printf("%.2f", resultado);
+        System.out.printf(ptBr, "%.2f", resultado);
         s.close();
     }
 }

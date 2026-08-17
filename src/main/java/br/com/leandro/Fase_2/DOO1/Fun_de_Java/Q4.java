@@ -36,7 +36,7 @@ public class Q4 {
             }
         }
 
-        System.out.println("\n"+somaQuartaLinha);
+        System.out.println(somaQuartaLinha);
         System.out.println(somaSegundaColuna);
         System.out.println(somaDiagonalPrincipal);
         System.out.println(somaDiagonalSecundaria);

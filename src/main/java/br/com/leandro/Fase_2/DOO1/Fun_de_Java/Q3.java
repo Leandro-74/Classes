@@ -14,5 +14,6 @@ public class Q3 {
         }
     }
     System.out.print(result);
+    s.close();
 }   
 }

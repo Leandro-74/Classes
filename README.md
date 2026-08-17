@@ -25,6 +25,8 @@ Aqui ficam organizadas as listas de exercícios feitas durante o curso, separada
 
 ## 🗂️ Fase 2
 
+* [Questões da lista de Fundamentos de Java](./src/main/java/br/com/leandro/Fase_2/DOO1/Fun_de_Java)
+
 > 🚧 Em construção — os links serão adicionados conforme as listas forem sendo resolvidas.
 
 ## 🛠️ Tecnologias

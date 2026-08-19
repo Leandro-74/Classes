@@ -1,4 +1,4 @@
-# Classes
+# Listas de Exercícios - Engenharia de Software
 
 [![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 [![UDESC](https://img.shields.io/badge/UDESC-Engenharia%20de%20Software-blue)](https://www.udesc.br/ceavi/engenhariadesoftware)
